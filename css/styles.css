@@ -1,0 +1,128 @@
+.nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #bebebe  !important;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height:  100vh;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    background: linear-gradient(#434343, #000000);
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Basic styling for tiles */
+.tile {
+    width: 200px;  /* Set width */
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* If you want text inside of the container */
+    opacity: 1;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+/* Hover animation */
+.tile:hover {
+    background-color: #606060;
+    transform: scale(1.1);
+}
+
+/* Position content inside tile */
+.tile-content {
+    position: relative;
+}
+
+
+/* Style for the tile link */
+.tile-link {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Style for the tile */
+.tile {
+}
+
+/* Style for the image inside the tile */
+.tile-images {
+    width: 100%; /* Makes the image take up the full width of the tile */
+    height: 80%; /* Maintains the aspect ratio */
+    object-fit: contain;
+}
+
+/* Style for the text inside the tile */
+.tile-text {
+    position: absolute;  /* Positions the text relative to the closest positioned ancestor */
+    bottom: 10px;  /* Positions the text 10px from the bottom of the tile */
+    color: white;  /* Sets the text color */
+    text-align: center;
+    padding: 5px; /* Optional: Adds some padding */
+}
+
+.title-text {
+    color: rgb(128, 128, 128);
+    text-align: center;
+    font-size: 42px;
+}
+
+a {
+    color: green;
+}
+.about-section.intro {
+    align-content: center;
+}
+.about-section p {
+    color: white;
+    align-content: center;
+}
+
+.about-section h1 {
+    color: white;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the child */
+    align-items: center; /* Vertically center the child */
+    height: 35vh; /* Adjust the height as needed */
+}
+
+.what-i-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the child */
+    align-items: center; /* Vertically center the child */
+    height: 35vh; /* Adjust the height as needed */
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the child */
+    align-items: center; /* Vertically center the child */
+    height: 35vh; /* Adjust the height as needed */
+}
+
+@media (max-width: 992px) {
+    .d-flex.justify-content-lg-center {
+        justify-content: flex-start !important;
+    }
+
+    /* Optional: You might also want to set the main content flex-grow to 0
+       to avoid it taking all available vertical space when the footer is visible */
+    main {
+        flex-grow: 0;
+    }
+}
